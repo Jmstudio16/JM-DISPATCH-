@@ -1,10 +1,11 @@
-import Link from "next/link";
-export default function Home() {
+// pages/index.tsx
+import React from 'react';
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-4xl font-bold text-center">JM Dispatch Logistics Pro</h1>
-      <p className="text-center mt-4">Connectez les brokers, dispatchers, chauffeurs avec un système load board révolutionnaire.</p>
-      <Link href="/login" className="mt-6 bg-blue-600 text-white px-4 py-2 rounded">Se connecter</Link>
+    <div className="text-center p-10">
+      <h1 className="text-3xl font-bold">Bienvenue sur JM Dispatch Logistics Pro</h1>
+      <p className="mt-4">Connectez-vous ou inscrivez-vous pour accéder à votre dashboard.</p>
     </div>
   );
 }

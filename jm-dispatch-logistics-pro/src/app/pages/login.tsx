@@ -15,3 +15,12 @@ export default function Login() {
     </div>
   );
 }
+const handleLogin = (e: any) => {
+  e.preventDefault();
+  const user = JSON.parse(localStorage.getItem("user") || "{}");
+  if (user.email === email) {
+    router.push(`/dashboard/${user.role}`);
+  } else {
+    alert("Utilisateur non trouvé");
+  }
+};
